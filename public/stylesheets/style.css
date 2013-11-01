@@ -1,0 +1,34 @@
+/* inspired by http://yihui.name/cn/ */
+
+
+*{padding:0;margin:0;}
+ul,li{ list-style: none}
+a{ color: #000; text-decoration:none}
+body{ font-size: 12px; font-family: "Microsoft YaHei"; line-height: 20px}
+.center{ width: 1000px; margin: 0 auto}
+
+
+.nav{ height: 30px; line-height: 30px; font-size: 14px; background: #bbbbbb; margin-bottom: 30px;}
+
+
+.nav a{ display: inline-block; padding: 0 20px;}
+
+.nav a:hover,.nav a.on{  background: #ccc;}
+
+.a_list li{ margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 20px;}
+
+
+.a_list h2{ font-size: 16px; font-weight: normal; margin-bottom: 5px}
+
+.a_list h2 a{ color:#900}
+
+.info{ color:#888888; margin-bottom: 5px}
+
+
+.reg_box{ line-height: 30px}
+.reg_box input{ height: 20px; line-height: 20px;}
+
+.reg_box .reg_btn{ padding: 0; line-height:25px; height: 25px; width: 80px; text-align: center}
+
+.tips_s{ background: #bbffbb;height: 25px; line-height: 25px; padding-left: 30px; margin-bottom: 30px;}
+.tips_e{ background:#ffbbbb; height: 25px; line-height: 25px; padding-left: 30px; margin-bottom: 30px; }

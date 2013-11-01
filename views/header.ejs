@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Blog -  <%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<nav class="nav center">
+    <span><a title="主页" href="/" <% if( title=='主页'){%>class="on"<%} %>>主页</a></span>
+    <% if (user) { %>
+    <span><a title="发表" href="/post" <% if( title=='发表'){%>class="on"<%} %>>发表</a></span>
+    <span><a title="登出" href="/logout" <% if( title=='登出'){%>class="on"<%} %>>登出</a></span>
+    <% } else { %>
+    <span><a title="登录" href="/login" <% if( title=='登录'){%>class="on"<%} %>>登录</a></span>
+    <span><a title="注册" href="/reg" <% if( title=='注册'){%>class="on"<%} %>>注册</a></span>
+    <% } %>
+</nav>
+<article class="body center">
+    <% if (success) { %>
+    <div class="tips_s"><%= success %></div>
+    <% } %>
+    <% if (error) { %>
+    <div class="tips_e"><%= error %> </div>
+<% } %>

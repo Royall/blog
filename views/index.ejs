@@ -1,0 +1,14 @@
+<%- include header %>
+<ul class="a_list">
+    <% posts.forEach(function (post, index) { %>
+    <li>
+        <h2><a href="#"><%= post.title %></a></h2>
+        <div class="info">
+            作者：<a href="#"><%= post.name %></a> |
+            日期：<%= post.time.minute %>
+        </div>
+        <div class="content"><%- post.post %></div>
+    </li>
+    <% }) %>
+</ul>
+<%- include footer %>
